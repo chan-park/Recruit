@@ -25,6 +25,4 @@ typedef NS_ENUM(NSInteger, RCInterviewType) {
 @property (nonatomic, strong) RCInterviewProcessManager *ipm;
 // Contact
 @property (nonatomic, strong) RCEmployerContact *employerContact;
-// Date
-@property (nonatomic, assign) NSDate *appliedDate;
 @end
