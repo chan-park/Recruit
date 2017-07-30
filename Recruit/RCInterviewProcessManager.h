@@ -7,7 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+typedef NS_ENUM(NSInteger, RCInterviewType) {
+    RCInterviewTypePhoneScreen,
+    RCInterviewTypeOnsite,
+    RCInterviewVideoCall,
+    RCInterviewCodingChallenge,
+    RCInterviewMisc
+};
 
 @interface RCInterviewProcessManager : NSObject
-
+@property (nonatomic) RCInterviewType currentInterview;
+- (void)goNextStep;
 @end

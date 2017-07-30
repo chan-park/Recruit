@@ -10,13 +10,6 @@
 @class RCCompany;
 @class RCInterviewProcessManager;
 @class RCEmployerContact;
-typedef NS_ENUM(NSInteger, RCInterviewType) {
-    RCInterviewTypePhoneScreen,
-    RCInterviewTypeOnsite,
-    RCInterviewVideoCall,
-    RCInterviewCodingChallenge,
-    RCInterviewMisc
-};
 
 @interface RCInterview : NSObject
 // Company
