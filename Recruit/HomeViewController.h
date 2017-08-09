@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AsyncDisplayKit/AsyncDisplayKit.h>
 
-@interface HomeViewController : UIViewController
+@interface HomeViewController : ASViewController
 
 @end

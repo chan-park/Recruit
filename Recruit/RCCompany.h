@@ -12,5 +12,4 @@ typedef NS_ENUM(NSUInteger, RCCompanyApplicationStatus) {
 @property (nonatomic, assign) NSDate *appliedDate;
 @property (nonatomic, strong) RCInterview *interview;
 @property (nonatomic) RCCompanyApplicationStatus applicationStatus;
-
 @end

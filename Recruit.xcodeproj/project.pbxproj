@@ -21,6 +21,9 @@
 		6FA94C731F2B223D00EB7877 /* RCCompany.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA94C721F2B223D00EB7877 /* RCCompany.m */; };
 		6FA94C771F2B23F700EB7877 /* RCInterviewProcessManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA94C761F2B23F700EB7877 /* RCInterviewProcessManager.m */; };
 		6FA94C7A1F2B24AE00EB7877 /* RCEmployerContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA94C791F2B24AE00EB7877 /* RCEmployerContact.m */; };
+		6FD1EAD11F3AECF400DA4189 /* HomeOptionsCellNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD1EAD01F3AECF400DA4189 /* HomeOptionsCellNode.m */; };
+		6FD1EAD51F3AF2BC00DA4189 /* HomeOptionsCellConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD1EAD41F3AF2BC00DA4189 /* HomeOptionsCellConfig.m */; };
+		6FD1EAD81F3AF5B300DA4189 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD1EAD71F3AF5B300DA4189 /* UIColor+Hex.m */; };
 		7174B18559A8866721348324 /* libPods-Recruit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DD8F9A60CDE4412BA9C82D /* libPods-Recruit.a */; };
 		F97090A0EDB22A1FD3AC3008 /* libPods-RecruitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 227F40BFF4E0130094D67AC1 /* libPods-RecruitTests.a */; };
 /* End PBXBuildFile section */
@@ -74,6 +77,12 @@
 		6FA94C761F2B23F700EB7877 /* RCInterviewProcessManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCInterviewProcessManager.m; sourceTree = "<group>"; };
 		6FA94C781F2B24AE00EB7877 /* RCEmployerContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCEmployerContact.h; sourceTree = "<group>"; };
 		6FA94C791F2B24AE00EB7877 /* RCEmployerContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCEmployerContact.m; sourceTree = "<group>"; };
+		6FD1EACF1F3AECF400DA4189 /* HomeOptionsCellNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeOptionsCellNode.h; sourceTree = "<group>"; };
+		6FD1EAD01F3AECF400DA4189 /* HomeOptionsCellNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeOptionsCellNode.m; sourceTree = "<group>"; };
+		6FD1EAD31F3AF2BC00DA4189 /* HomeOptionsCellConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeOptionsCellConfig.h; path = ../HomeOptionsCellConfig.h; sourceTree = "<group>"; };
+		6FD1EAD41F3AF2BC00DA4189 /* HomeOptionsCellConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeOptionsCellConfig.m; path = ../HomeOptionsCellConfig.m; sourceTree = "<group>"; };
+		6FD1EAD61F3AF5B300DA4189 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		6FD1EAD71F3AF5B300DA4189 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		7CF8F1529ED5FBD5ABF4B7E4 /* Pods-RecruitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecruitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RecruitTests/Pods-RecruitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8D8F7FE2CBE4C0B37BADD09F /* libPods-RecruitUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RecruitUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97336ACA2B6719EA003E9946 /* Pods-Recruit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Recruit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Recruit/Pods-Recruit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -133,10 +142,14 @@
 		6FA94C371F2B127300EB7877 /* Recruit */ = {
 			isa = PBXGroup;
 			children = (
+				6FD1EAD91F3AF5F400DA4189 /* Extensions */,
+				6FD1EAD21F3AECFB00DA4189 /* CellNode */,
 				6FA94C3B1F2B127300EB7877 /* AppDelegate.h */,
 				6FA94C3C1F2B127300EB7877 /* AppDelegate.m */,
 				6FA94C3E1F2B127300EB7877 /* ViewController.h */,
 				6FA94C3F1F2B127300EB7877 /* ViewController.m */,
+				6FD1EAD31F3AF2BC00DA4189 /* HomeOptionsCellConfig.h */,
+				6FD1EAD41F3AF2BC00DA4189 /* HomeOptionsCellConfig.m */,
 				6FA94C6B1F2B215800EB7877 /* HomeViewController.h */,
 				6FA94C6C1F2B215800EB7877 /* HomeViewController.m */,
 				6FA94C741F2B224000EB7877 /* Model */,
@@ -188,6 +201,24 @@
 				6FA94C791F2B24AE00EB7877 /* RCEmployerContact.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		6FD1EAD21F3AECFB00DA4189 /* CellNode */ = {
+			isa = PBXGroup;
+			children = (
+				6FD1EACF1F3AECF400DA4189 /* HomeOptionsCellNode.h */,
+				6FD1EAD01F3AECF400DA4189 /* HomeOptionsCellNode.m */,
+			);
+			name = CellNode;
+			sourceTree = "<group>";
+		};
+		6FD1EAD91F3AF5F400DA4189 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6FD1EAD61F3AF5B300DA4189 /* UIColor+Hex.h */,
+				6FD1EAD71F3AF5B300DA4189 /* UIColor+Hex.m */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		7764207ACFBD0044C5AF95A9 /* Frameworks */ = {
@@ -497,11 +528,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FA94C701F2B221200EB7877 /* RCInterview.m in Sources */,
+				6FD1EAD51F3AF2BC00DA4189 /* HomeOptionsCellConfig.m in Sources */,
+				6FD1EAD11F3AECF400DA4189 /* HomeOptionsCellNode.m in Sources */,
 				6FA94C401F2B127300EB7877 /* ViewController.m in Sources */,
 				6FA94C731F2B223D00EB7877 /* RCCompany.m in Sources */,
 				6FA94C771F2B23F700EB7877 /* RCInterviewProcessManager.m in Sources */,
 				6FA94C7A1F2B24AE00EB7877 /* RCEmployerContact.m in Sources */,
 				6FA94C3D1F2B127300EB7877 /* AppDelegate.m in Sources */,
+				6FD1EAD81F3AF5B300DA4189 /* UIColor+Hex.m in Sources */,
 				6FA94C3A1F2B127300EB7877 /* main.m in Sources */,
 				6FA94C6D1F2B215800EB7877 /* HomeViewController.m in Sources */,
 			);
