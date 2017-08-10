@@ -24,15 +24,17 @@
     _title = config.title;
     self.backgroundColor = [UIColor colorWithHex:config.hexVal];
     
+    self.automaticallyManagesSubnodes = YES;
     _titleNode = [[ASTextNode alloc]init];
-    NSDictionary *attributes = @{NSForegroundColorAttributeName:[UIColor whiteColor], NSFontAttributeName: [UIFont fontWithName:@"Courier"  size:13]};
+    NSDictionary *attributes = @{NSForegroundColorAttributeName:[UIColor whiteColor], NSFontAttributeName: [UIFont fontWithName:@"Courier"  size:25]};
     _titleNode.attributedText = [[NSAttributedString alloc]initWithString:_title attributes:attributes];
+    [_titleNode.view sizeToFit];
     
     _arrowNode = [[ASImageNode alloc]init];
     
+    
     return self;
 }
-
 
 - (void)layout
 {
@@ -44,7 +46,7 @@
     ASStackLayoutSpec *horizontalLayoutSpec = [ASStackLayoutSpec horizontalStackLayoutSpec];
     ASLayoutSpec *spacer = [[ASLayoutSpec alloc]init];
     spacer.style.flexGrow = YES;
-    horizontalLayoutSpec.children = @[self.titleNode, spacer, self.arrowNode];
+    horizontalLayoutSpec.children = @[self.titleNode];
     horizontalLayoutSpec.style.alignSelf = ASStackLayoutAlignSelfCenter;
     horizontalLayoutSpec.justifyContent = ASStackLayoutJustifyContentSpaceBetween;
     return horizontalLayoutSpec;

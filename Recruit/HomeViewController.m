@@ -28,7 +28,7 @@
     {
         _tableNode.dataSource = self;
         _tableNode.delegate = self;
-        [self setTableStyle];
+        [self applyStyle];
     }
     return self;
 }
@@ -38,11 +38,15 @@
     self.view.backgroundColor = [UIColor whiteColor];
 }
 
-
-- (void)setTableStyle
+#pragma mark - Appearance
+- (void)applyStyle
 {
     _tableNode.view.allowsSelection = NO;
     _tableNode.view.separatorStyle = UITableViewCellSeparatorStyleNone;
+}
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
 }
 
 @end
@@ -86,8 +90,8 @@
 }
 
 @end
-@implementation HomeViewController (Delegate)
 
+@implementation HomeViewController (Delegate)
 - (ASSizeRange)tableView:(ASTableView *)tableNode
 constrainedSizeForRowAtIndexPath:(NSIndexPath *)indexPath {
     CGFloat width = [UIScreen mainScreen].bounds.size.width;
@@ -95,5 +99,4 @@ constrainedSizeForRowAtIndexPath:(NSIndexPath *)indexPath {
     CGSize max = CGSizeMake(width, INFINITY);
     return ASSizeRangeMake(min, max);
 }
-
 @end
