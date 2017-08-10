@@ -26,9 +26,15 @@
     
     self.automaticallyManagesSubnodes = YES;
     _titleNode = [[ASTextNode alloc]init];
-    NSDictionary *attributes = @{NSForegroundColorAttributeName:[UIColor whiteColor], NSFontAttributeName: [UIFont fontWithName:@"Courier"  size:25]};
+    _titleNode.style.alignSelf = ASStackLayoutAlignSelfCenter;
+    
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc]init];
+    paragraphStyle.alignment = NSTextAlignmentCenter;
+    
+    NSDictionary *attributes = @{NSForegroundColorAttributeName:[UIColor whiteColor], NSFontAttributeName: [UIFont fontWithName:@"Courier"  size:25], NSParagraphStyleAttributeName:paragraphStyle};
     _titleNode.attributedText = [[NSAttributedString alloc]initWithString:_title attributes:attributes];
     [_titleNode.view sizeToFit];
+   
     
     _arrowNode = [[ASImageNode alloc]init];
     
