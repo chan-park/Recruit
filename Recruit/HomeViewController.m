@@ -55,7 +55,7 @@
 {
     switch (index) {
         case 0:
-            return [HomeOptionsCellConfig configWithTitle:@"Add Interviews" colorInHex:0x00aedb];
+            return [HomeOptionsCellConfig configWithTitle:@"Add Company" colorInHex:0x00aedb];
             
         case 1:
             return [HomeOptionsCellConfig configWithTitle:@"See Interviews" colorInHex:0xa200ff];

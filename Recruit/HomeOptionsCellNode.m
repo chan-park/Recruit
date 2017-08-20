@@ -28,10 +28,7 @@
     _titleNode = [[ASTextNode alloc]init];
     _titleNode.style.alignSelf = ASStackLayoutAlignSelfCenter;
     
-    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc]init];
-    paragraphStyle.alignment = NSTextAlignmentCenter;
-    
-    NSDictionary *attributes = @{NSForegroundColorAttributeName:[UIColor whiteColor], NSFontAttributeName: [UIFont fontWithName:@"Courier"  size:25], NSParagraphStyleAttributeName:paragraphStyle};
+    NSDictionary *attributes = @{NSForegroundColorAttributeName:[UIColor whiteColor], NSFontAttributeName: [UIFont fontWithName:@"Courier"  size:25]};
     _titleNode.attributedText = [[NSAttributedString alloc]initWithString:_title attributes:attributes];
     [_titleNode.view sizeToFit];
    
@@ -50,9 +47,11 @@
 - (ASLayoutSpec *)layoutSpecThatFits:(ASSizeRange)constrainedSize
 {
     ASStackLayoutSpec *horizontalLayoutSpec = [ASStackLayoutSpec horizontalStackLayoutSpec];
-    ASLayoutSpec *spacer = [[ASLayoutSpec alloc]init];
-    spacer.style.flexGrow = YES;
-    horizontalLayoutSpec.children = @[self.titleNode];
+    ASLayoutSpec *spacerLeft = [[ASLayoutSpec alloc]init];
+    ASLayoutSpec *spacerRight = [[ASLayoutSpec alloc]init];
+    spacerLeft.style.flexGrow = YES;
+    spacerRight.style.flexGrow = YES;
+    horizontalLayoutSpec.children = @[spacerLeft, self.titleNode, spacerRight];
     horizontalLayoutSpec.style.alignSelf = ASStackLayoutAlignSelfCenter;
     horizontalLayoutSpec.justifyContent = ASStackLayoutJustifyContentSpaceBetween;
     return horizontalLayoutSpec;
