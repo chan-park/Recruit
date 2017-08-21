@@ -1,8 +1,17 @@
 #import "RCQuestionSet.h"
 @interface RCQuestionSet ()
-@property (nonatomic, strong) NSMutableArray *questions;
+@property (nonatomic, copy) NSMutableArray *questions;
 @end
 @implementation RCQuestionSet
+- (id)initWithQuestionSet:(NSArray *)questions
+{
+    if (self = [super init])
+    {
+        self.questions = [questions mutableCopy];
+    }
+    return self;
+}
+
 - (NSUInteger) getNumberOfQuestions
 {
     return [_questions count];

@@ -7,10 +7,11 @@
 //
 
 #import "QuestionsViewController.h"
-
-
+#import "RCQuestionSet.h"
+#import "QuestionNode.h"
 @interface QuestionsViewController () <ASPagerDataSource, ASPagerDelegate>
 @property (nonatomic, strong) ASPagerNode *pagerNode;
+@property (nonatomic, strong) RCQuestionSet *questionSet;
 @end
 
 @implementation QuestionsViewController
@@ -18,10 +19,12 @@
 
 #pragma mark - Initialization
 
-- (id)initWithPagerNode:(ASPagerNode *)pager
+- (id)initWithQuestionSet:(RCQuestionSet *)set
 {
     if (!(self = [super init])) return nil;
-    self.pagerNode = pager;
+    
+    self.questionSet = set;
+    
     return self;
 }
 
@@ -35,12 +38,17 @@
 
 - (NSInteger)numberOfPagesInPagerNode:(ASPagerNode *)pagerNode
 {
-    return 3;
+    return [self.questionSet numberOfQuestions];
 }
 
 - (ASCellNodeBlock)pagerNode:(ASPagerNode *)pagerNode nodeBlockAtIndex:(NSInteger)index
 {
-    return nil;
+    ASCellNodeBlock block = ^{
+        ASCellNode *node = [[ASCellNode alloc]init];
+        return node;
+        
+    };
+    return block;
 }
 
 

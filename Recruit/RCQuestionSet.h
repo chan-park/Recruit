@@ -10,6 +10,7 @@
 
 @interface RCQuestionSet : NSObject
 @property (nonatomic, readonly) NSUInteger numberOfQuestions;
+- (id)initWithQuestionSet:(NSArray *)questions;
 - (void)addQuestion:(NSString *)q;
 - (NSString *)questionAtIndex:(NSUInteger)index;
 - (NSArray *)questions;
