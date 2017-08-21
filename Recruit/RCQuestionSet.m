@@ -10,7 +10,7 @@
 
 - (void)addQuestion:(NSString *)q
 {
-    [self.questions addObject:q];
+    [_questions addObject:q];
 }
 
 - (NSString *)questionAtIndex:(NSUInteger)index
