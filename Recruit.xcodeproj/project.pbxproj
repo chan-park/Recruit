@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		23B543DCB7B8FCCF1458DBAB /* libPods-RecruitUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8F7FE2CBE4C0B37BADD09F /* libPods-RecruitUITests.a */; };
+		6F24D1001F4AC7FF0059F753 /* RCQuestionSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F24D0FF1F4AC7FF0059F753 /* RCQuestionSet.m */; };
 		6FA75D5C1F4A3F31007DEE92 /* QuestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA75D5B1F4A3F31007DEE92 /* QuestionsViewController.m */; };
 		6FA94C3A1F2B127300EB7877 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA94C391F2B127300EB7877 /* main.m */; };
 		6FA94C3D1F2B127300EB7877 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA94C3C1F2B127300EB7877 /* AppDelegate.m */; };
@@ -52,6 +53,8 @@
 		36B109B15994137604DB0498 /* Pods-Recruit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Recruit.release.xcconfig"; path = "Pods/Target Support Files/Pods-Recruit/Pods-Recruit.release.xcconfig"; sourceTree = "<group>"; };
 		3EE5FB41662A88ADA4A8A1A9 /* Pods-RecruitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecruitUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RecruitUITests/Pods-RecruitUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		56AAE36F412174AB10ACC01D /* Pods-RecruitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecruitUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecruitUITests/Pods-RecruitUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6F24D0FE1F4AC7FF0059F753 /* RCQuestionSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCQuestionSet.h; sourceTree = "<group>"; };
+		6F24D0FF1F4AC7FF0059F753 /* RCQuestionSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCQuestionSet.m; sourceTree = "<group>"; };
 		6FA75D5A1F4A3F31007DEE92 /* QuestionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionsViewController.h; path = ../QuestionsViewController.h; sourceTree = "<group>"; };
 		6FA75D5B1F4A3F31007DEE92 /* QuestionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionsViewController.m; path = ../QuestionsViewController.m; sourceTree = "<group>"; };
 		6FA94C351F2B127300EB7877 /* Recruit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recruit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -196,6 +199,8 @@
 		6FA94C741F2B224000EB7877 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6F24D0FE1F4AC7FF0059F753 /* RCQuestionSet.h */,
+				6F24D0FF1F4AC7FF0059F753 /* RCQuestionSet.m */,
 				6FA94C6E1F2B221200EB7877 /* RCInterview.h */,
 				6FA94C6F1F2B221200EB7877 /* RCInterview.m */,
 				6FA94C711F2B223D00EB7877 /* RCCompany.h */,
@@ -533,6 +538,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FA94C701F2B221200EB7877 /* RCInterview.m in Sources */,
+				6F24D1001F4AC7FF0059F753 /* RCQuestionSet.m in Sources */,
 				6FD1EAD51F3AF2BC00DA4189 /* HomeOptionsCellConfig.m in Sources */,
 				6FD1EAD11F3AECF400DA4189 /* HomeOptionsCellNode.m in Sources */,
 				6FA94C401F2B127300EB7877 /* ViewController.m in Sources */,

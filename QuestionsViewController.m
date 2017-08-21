@@ -9,7 +9,7 @@
 #import "QuestionsViewController.h"
 
 
-@interface QuestionsViewController ()
+@interface QuestionsViewController () <ASPagerDataSource, ASPagerDelegate>
 @property (nonatomic, strong) ASPagerNode *pagerNode;
 @end
 
@@ -28,6 +28,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+
+
+#pragma mark - Data Source
+
+- (NSInteger)numberOfPagesInPagerNode:(ASPagerNode *)pagerNode
+{
+    return 3;
+}
+
+- (ASCellNodeBlock)pagerNode:(ASPagerNode *)pagerNode nodeBlockAtIndex:(NSInteger)index
+{
+    return nil;
 }
 
 
