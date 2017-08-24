@@ -27,8 +27,8 @@
     return [self.questions objectAtIndex:index];
 }
 
-- (NSArray *)questions
+- (NSArray *)getQuestions
 {
-    return self.questions;
+    return (NSArray *)self.questions;
 }
 @end

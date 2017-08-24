@@ -9,5 +9,13 @@
 #import "QuestionNode.h"
 
 @implementation QuestionNode
+- (void)layout
+{
+    
+}
 
+- (ASLayoutSpec *)layoutSpecThatFits:(ASSizeRange)constrainedSize
+{
+    return nil;
+}
 @end

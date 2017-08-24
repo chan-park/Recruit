@@ -1,9 +1,9 @@
 //
-//  QuestionNode.h
-//  Recruit
+//  questionnode.h
+//  recruit
 //
-//  Created by Chan Hee Park on 8/21/17.
-//  Copyright © 2017 Chan Hee Park. All rights reserved.
+//  created by chan hee park on 8/21/17.
+//  copyright © 2017 chan hee park. all rights reserved.
 //
 
 #import <AsyncDisplayKit/AsyncDisplayKit.h>
